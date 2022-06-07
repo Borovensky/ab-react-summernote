@@ -2,7 +2,7 @@
   "name": "ab-react-summernote",
   "version": "1.0.0",
   "description": "Summernote adaptation for react",
-  "main": "index.js",
+  "main": "./dist/react-summernote.js",
   "scripts": {
     "build": "webpack",
     "install-modules": "yarn"
