@@ -9,7 +9,7 @@ const dist = path.join(__dirname, 'dist');
 module.exports = {
   context: __dirname,
   entry: {
-    'react-summernote': path.join(src, 'summernote.jsx')
+    'react-summernote': path.join(src, 'Summernote.jsx')
   },
   output: {
     path: dist,

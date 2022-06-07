@@ -1,6 +1,6 @@
 {
   "name": "ab-react-summernote",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Summernote adaptation for react",
   "main": "./dist/react-summernote.js",
   "scripts": {
@@ -35,7 +35,7 @@
     "bootstrap": "^3.3.6",
     "jquery": "^2.2.0 || ^3.0.0",
     "react": "^15.0.0",
-    "react-dom": "^15.0.0"
+    "react-dom": "*"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
