@@ -35,6 +35,12 @@ module.exports = {
       commonjs2: 'jquery',
       commonjs: 'jquery',
       amd: 'jquery'
+    },
+    jQuery: {
+      root: '$',
+      commonjs2: 'jquery',
+      commonjs: 'jquery',
+      amd: 'jquery'
     }
   }],
   plugins: [
