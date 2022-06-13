@@ -6,6 +6,11 @@ import 'codemirror/lib/codemirror.css';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import 'bootstrap/js/modal';
+import 'bootstrap/js/dropdown';
+import 'bootstrap/js/tooltip';
+import 'bootstrap/dist/css/bootstrap.css';
+
 const randomUid = () => Math.floor(Math.random() * 100000);
 
 class ReactSummernote extends Component {
