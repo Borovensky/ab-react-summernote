@@ -6,11 +6,6 @@ import 'codemirror/lib/codemirror.css';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
-import 'bootstrap/js/modal';
-import 'bootstrap/js/dropdown';
-import 'bootstrap/js/tooltip';
-import 'bootstrap/dist/css/bootstrap.css';
-
 const randomUid = () => Math.floor(Math.random() * 100000);
 
 class ReactSummernote extends Component {
@@ -51,7 +46,6 @@ class ReactSummernote extends Component {
   componentDidMount() {
     const options = this.props.options || {};
     const codeview = this.props.codeview;
-    // const codeviewCommand = codeview ? 'codeview.activate' : 'codeview.deactivate';
     options.callbacks = this.callbacks;
 
     this.editor = $(`#${this.uid}`);
@@ -178,7 +172,9 @@ class ReactSummernote extends Component {
   }
 
   insertText(text) {
-    this.editor.summernote('insertText', text);
+    this.editor.summernote('restoreRange');
+    this.editor.summernote('editor.insertText', text);
+    this.editor.summernote('saveRange');
   }
 
   get callbacks() {

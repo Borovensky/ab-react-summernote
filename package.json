@@ -1,6 +1,6 @@
 {
   "name": "ab-react-summernote",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Summernote adaptation for react",
   "main": "./dist/react-summernote.js",
   "scripts": {
@@ -27,14 +27,14 @@
   },
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^3.3.6",
     "codemirror": "^5.26.0",
     "prop-types": "^15.5.10",
     "summernote": "^0.8.15"
   },
   "peerDependencies": {
+    "bootstrap": "^3.3.6",
     "jquery": "^2.2.0 || ^3.0.0",
-    "react": "^18.2.0",
+    "react": "^15.0.0",
     "react-dom": "*"
   },
   "devDependencies": {
